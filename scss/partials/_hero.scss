@@ -1,0 +1,39 @@
+
+/* Estilos del hero */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-title {
+    font-size: 96px;
+    margin-bottom: 10px;
+    color: $color-primary;
+    font-family: "Comic Runes", sans-serif;
+    src: url(../fonts/ComicRunes.otf);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: $color-primary;
+    font-family: "Comic Runes", sans-serif;
+    src: url(../fonts/ComicRunes.otf);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #000000;
+}

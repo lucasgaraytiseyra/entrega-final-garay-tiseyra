@@ -1,0 +1,74 @@
+/* Estilos de Comunidad */
+main#comunidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#comunidad {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.comunidad-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: $color-primary;
+    font-family: $font-family;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.discord-link {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.discord-link:hover {
+    color: rgba(80, 7, 80, 0.9); /* Cambiar el color al pasar el mouse para resaltar */
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+#mapa {
+    iframe {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+}
+
+
+.info-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: $color-primary;
+    font-family: $font-family;
+}
+
+.info-description {
+    font-size: 16px;
+    color: #333;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+main {
+    margin-bottom: 60px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 1fr);
+}
+

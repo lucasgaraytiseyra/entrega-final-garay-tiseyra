@@ -1,0 +1,52 @@
+
+/* Estilos de discografía */
+main#playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Añadido para centrar el texto */
+
+    div:not(.playlist-container) {
+        text-align: center;
+    }
+
+    .playlist-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .playlist {
+            width: calc(33.33% - 20px);
+            /* Para dejar espacio entre las playlists */
+        }
+    }
+}
+
+#playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#playlist h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#playlist p {
+    margin-bottom: 20px;
+}
+
+.playlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.playlist {
+    width: calc(33.33% - 20px);
+}

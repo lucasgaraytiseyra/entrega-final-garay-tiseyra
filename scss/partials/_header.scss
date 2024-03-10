@@ -1,0 +1,31 @@
+
+/* Estilos del header */
+header {
+    text-align: center;
+}
+
+.main-nav .container {
+    width: 100%;
+}
+
+.logo {
+    padding: 15px;
+    font-size: 24px;
+    color: $color-primary;
+    text-decoration: none;
+    font-family: $font-family;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu-link {
+    margin: 0 10px;
+    font-size: 18px;
+    color: $color-primary;
+    text-decoration: none;
+    font-family: $font-family;
+}

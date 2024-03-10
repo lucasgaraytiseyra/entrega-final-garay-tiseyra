@@ -9,39 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <!--Siempre poner Boostrap antes de CSS por la cascada-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="body">
     <header>
-        <nav class="navbar">
+        <nav class="main-nav">
             <div class="container">
-                <a class="navbar-brand" href="index.html">DUKI</a>
+                <a class="logo" href="index.html">DUKI</a>
             </div>
-            <ul class="menu-nav">
-                <li><a class="enlaces" href="index.html">Inicio</a>
-                </li>
-
-                <li><a class="enlaces" href="pages/comunidad.html">Comunidad</a>
-                </li>
-
-                <li><a class="enlaces" href="pages/discografia.html">Discografía</a>
-                </li>
-
-                <li><a class="enlaces" href="pages/galeria.html">Galería</a>
-                </li>
-
-                <li><a class="enlaces" href="pages/fechas.html">Fechas</a>
-                </li>
+            <ul class="menu-links">
+                <li><a class="menu-link" href="index.html">Inicio</a></li>
+                <li><a class="menu-link" href="pages/comunidad.html">Comunidad</a></li>
+                <li><a class="menu-link" href="pages/discografia.html">Discografía</a></li>
+                <li><a class="menu-link" href="pages/galeria.html">Galería</a></li>
+                <li><a class="menu-link" href="pages/fechas.html">Fechas</a></li>
             </ul>
         </nav>
-        <h2 class="titulo">DUKI</h2>
-        <h3 class="titulo2">de la plaza al estadio </h3>
-        <div id="img-inicio">
+    </header>
+    <section class="hero">
+        <h1 class="hero-title">DUKI</h1>
+        <h2 class="hero-subtitle">de la plaza al estadio</h2>
+        <div class="hero-image">
             <img src="img/duki-1.jpg" alt="Mauro Ezequiel Lombardo">
         </div>
-        <p class="parrafo-inicio">
+        <p class="hero-text">
             Mauro Ezequiel Lombardo, mejor conocido como Duki es un rapero y compositor argentino.
             Mauro surgió de sus participaciones en las batallas de freestyle, en especial de la competencia El Quinto
             Escalón, la cual le dio su primera cuota de popularidad cuando se proclamó campeón en 2016. Su victoria le
@@ -56,17 +48,18 @@
             En noviembre de 2019 lanzó su <strong>álbum debut</strong> , <strong>Super Sangre Joven</strong>, y fue
             lanzado a través de su propio sello discográfico de nombre homónimo.
         </p>
-    </header>
+    </section>
     <footer>
         <div>
-            <p class="p-footer">Copyright Lucas Garay Tiseyra</p>
+            <p class="footer-copyright">Copyright Lucas Garay Tiseyra</p>
         </div>
-        <div class="redes-footer">
+        <div class="footer-social">
             <a href="https://www.instagram.com/duki/" target="_blank">
-                <img src="img/instagram.png" alt="INSTAGRAM"></a>
-
+                <img src="img/instagram.png" alt="INSTAGRAM">
+            </a>
             <a href="https://www.youtube.com/@duki" target="_blank">
-                <img src="img/youtube.png" alt="Youtube"></a>
+                <img src="img/youtube.png" alt="Youtube">
+            </a>
         </div>
     </footer>
 </body>

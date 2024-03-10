@@ -1,0 +1,42 @@
+
+/* Variables */
+$color-primary: #500750;
+$color-fondo-body: rgb(155, 136, 167);
+$color-fondo-main: rgb(160, 111, 206);
+$color-fondo-footer: rgb(127, 79, 139);
+$color-texto: #333;
+$color-enlace: blue;
+$color-secondary: white;
+$font-family: "Montserrat", sans-serif;
+
+
+/* Fuentes */
+@font-face {
+    font-family: "Comic Runes";
+    src: url(../fonts/ComicRunes.otf);
+}
+
+/* Estilos para los textos principales */
+h1, h2, .comunidad-title, .fechas-title, .discografia-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(136, 132, 136);
+}
+
+/* Estilos para párrafos */
+p {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}

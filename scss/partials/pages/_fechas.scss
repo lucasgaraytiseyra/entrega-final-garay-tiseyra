@@ -1,0 +1,76 @@
+/* Estilos de la página de fechas */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+
+    fieldset {
+        border: none;
+        margin-bottom: 20px;
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: $color-primary;
+        }
+
+        .campos {
+            margin-bottom: 10px;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: $color-primary;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-top: 5px;
+                font-size: 16px;
+            }
+
+            input[type="submit"],
+            input[type="reset"] {
+                width: auto;
+                padding: 10px 20px;
+                margin-top: 10px;
+                background-color: $color-primary;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* Estilos de las fechas */
+.fechas {
+    list-style: none;
+    margin-bottom: 20px;
+
+    li {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: $color-texto;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-enlace;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+}
+main.fechas-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

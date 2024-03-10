@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --color-primary: #500750;
+  --color-fondo-body: rgb(155, 136, 167);
+  --color-fondo-main: rgb(160, 111, 206);
+  --color-fondo-footer: rgb(127, 79, 139);
+  --color-texto: #333;
+  --color-enlace: blue;
+  --color-secondary: white;
+  --font-family: "Montserrat", sans-serif;
+}
+
+/* Fuentes */
+@font-face {
+  font-family: "Comic Runes";
+  src: url(../fonts/ComicRunes.otf);
+}
+/* Estilos para los textos principales */
+h1, h2, .comunidad-title, .fechas-title, .discografia-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(136, 132, 136);
+}
+
+/* Estilos del header */
+header {
+  text-align: center;
+}
+
+.main-nav .container {
+  width: 100%;
+}
+
+.logo {
+  padding: 15px;
+  font-size: 24px;
+  color: #500750;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.menu-link {
+  margin: 0 10px;
+  font-size: 18px;
+  color: #500750;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilos del hero */
+.hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero-title {
+  font-size: 96px;
+  margin-bottom: 10px;
+  color: #500750;
+  font-family: "Comic Runes", sans-serif;
+  src: url(../fonts/ComicRunes.otf);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #500750;
+  font-family: "Comic Runes", sans-serif;
+  src: url(../fonts/ComicRunes.otf);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+/* Estilos de Comunidad */
+#comunidad {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.comunidad-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #500750;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.discord-link {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #500750;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #500750;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-description {
+  font-size: 16px;
+  color: #333;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+main {
+  margin-bottom: 60px;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* Estilos para párrafos */
+p {
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+
+/* Estilos de la página de fechas */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+form fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+form fieldset legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #500750;
+}
+form fieldset .campos {
+  margin-bottom: 10px;
+}
+form fieldset .campos label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #500750;
+}
+form fieldset .campos input,
+form fieldset .campos textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+form fieldset .campos input[type=submit],
+form fieldset .campos input[type=reset] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #500750;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilos de las fechas */
+.fechas {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.fechas li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.fechas a {
+  text-decoration: none;
+  color: blue;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Estilos de discografía */
+main#playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Añadido para centrar el texto */
+}
+main#playlist div:not(.playlist-container) {
+  text-align: center;
+}
+main#playlist .playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+main#playlist .playlist-container .playlist {
+  width: calc(33.33% - 20px);
+  /* Para dejar espacio entre las playlists */
+}
+
+/* Centrar todo en la página de fechas */
+main.fechas-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos de la página de Discografía */
+#playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#playlist h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#playlist p {
+  margin-bottom: 20px;
+}
+
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.playlist {
+  width: calc(33.33% - 20px);
+}
+
+/* Estilos de Comunidad */
+main#comunidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#comunidad {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.comunidad-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #500750;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Estilos de Comunidad */
+.discord-link {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.discord-link:hover {
+  color: rgba(80, 7, 80, 0.9); /* Cambiar el color al pasar el mouse para resaltar */
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+#mapa iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+}
+
+/* Estilos para la Galería */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#carouselExampleIndicators {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imagen {
+  flex: 0 0 33.33%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titulo {
+  color: #500750;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video {
+  margin: 20px;
+  width: 500px;
+}
+.video iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+.footer-social {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.footer-social img {
+  margin-left: 10px;
+}/*# sourceMappingURL=styles.css.map */
